@@ -4,5 +4,7 @@ while [ -n "$X" ]
 do
     echo "Enter some text"
     read X
-    echo "You typed: $X"
+    if [ -n "$X" ] ; then
+        echo "You typed: $X"
+    fi
 done
